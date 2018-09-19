@@ -1,0 +1,8 @@
+/Users/Guest/Desktop/todolist/bin/Debug/netcoreapp1.0.4/ToDoList.deps.json
+/Users/Guest/Desktop/todolist/bin/Debug/netcoreapp1.0.4/ToDoList.runtimeconfig.json
+/Users/Guest/Desktop/todolist/bin/Debug/netcoreapp1.0.4/ToDoList.runtimeconfig.dev.json
+/Users/Guest/Desktop/todolist/obj/Debug/netcoreapp1.0.4/ToDoList.AssemblyInfo.cs
+/Users/Guest/Desktop/todolist/bin/Debug/netcoreapp1.0.4/ToDoList.dll
+/Users/Guest/Desktop/todolist/bin/Debug/netcoreapp1.0.4/ToDoList.pdb
+/Users/Guest/Desktop/todolist/obj/Debug/netcoreapp1.0.4/ToDoList.dll
+/Users/Guest/Desktop/todolist/obj/Debug/netcoreapp1.0.4/ToDoList.pdb
