@@ -9,3 +9,8 @@
 <form action="/items/delete" method="post">
   <button type="submit" name="button">Clear All Items</button>
 </form>
+
+@foreach (var item in Model)
+       {
+           <h4>@item.GetDescription() | <a href="/items/@item.GetId()/update">Edit</a></h4>
+       }

@@ -37,6 +37,15 @@ namespace ToDoList.Controllers
       //      return View("Index", allItems);
       //  }
 
+      // [HttpPost("/items")]
+      //   public ActionResult Create(string description)
+      //   {
+      //     Item newItem = new Item(description);
+      //     newItem.Save();
+      //     List<Item> allItems = Item.GetAll();
+      //     return RedirectToAction("Index");
+      //   }
+
        [HttpGet("/items/{id}")]
       public ActionResult Details(int id)
       {
@@ -48,7 +57,7 @@ namespace ToDoList.Controllers
         [HttpPost("/items/delete")]
         public ActionResult DeleteAll()
         {
-            Item.ClearAll();
+            Item.DeleteAll();
             return View();
         }
 
@@ -70,6 +79,23 @@ namespace ToDoList.Controllers
           model.Add("category", category);
           return View(item);
        }
+
+
+
+       [HttpGet("/items/{id}/update")]
+       public ActionResult UpdateForm(int id)
+       {
+           Item thisItem = Item.Find(id);
+           return View(thisItem);
+       }
+
+       [HttpPost("/items/{id}/update")]
+        public ActionResult Update(int id, string newDescription)
+        {
+            Item thisItem = Item.Find(id);
+            thisItem.Edit(newDescription);
+            return RedirectToAction("Index");
+        }
 
     }
 }
